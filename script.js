@@ -101,10 +101,19 @@ const openInvitationButton = document.getElementById("openInvitation");
 const invitationCover = document.getElementById("invitationCover");
 
 if (openInvitationButton && invitationCover) {
-  document.body.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
 
-  openInvitationButton.addEventListener("click", function () {
-    invitationCover.classList.add("cover-hidden");
-    document.body.style.overflow = "";
-  });
+    function openInvitation() {
+        if (invitationCover.classList.contains("cover-hidden")) {
+            return;
+        }
+
+        invitationCover.classList.add("cover-hidden");
+        document.body.style.overflow = "";
+    }
+
+    openInvitationButton.addEventListener("click", openInvitation);
+
+    setTimeout(openInvitation, 5000);
 }
+

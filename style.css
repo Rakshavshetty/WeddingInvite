@@ -493,9 +493,12 @@ justify-content: center;
 }
 
 .cover-intro {
-  color: var(--text);
-  font-size: 15px;
-  letter-spacing: 1px;
+    color: #f5e6c8;
+    font-size: 15px;
+    letter-spacing: 1px;
+    opacity: 1;
+    visibility: visible;
+    display: block;
 }
 
 .cover-initials {
@@ -606,9 +609,9 @@ justify-content: center;
   right: 12px;
 }
   .cover-intro {
-  color: #e5cda8;
+  color: #f5e6c8;
   font-size: 15px;
-  letter-spacing: 3px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
